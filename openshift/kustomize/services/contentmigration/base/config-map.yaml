@@ -14,10 +14,12 @@ metadata:
     version: 1.0.0
     component: contentmigration-service
     managed-by: kustomize
-type: Opaque
+# type: Opaque
 data:
   MAX_FAIL_LIMIT: "5"
   VOLUME_PATH: /data
   CONTENT_MIGRATION_MEDIA_HOST_ROOT_URI: "https://tno.gov.bc.ca/av"
   # Filter per instance
   INGEST_TYPES: "TNO-AudioVideo,TNO-Image,TNO-PrintContent,TNO-Story"
+  SUPPORTED_IMPORT_MIGRATION_TYPES: "Recent"
+  DEFAULT_USERNAME_FOR_AUDIT: "contentmigrator"
